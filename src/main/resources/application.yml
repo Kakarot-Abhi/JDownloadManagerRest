@@ -1,0 +1,15 @@
+part:
+  connections: 8
+  download:
+    size: 1024 # 0.5 MB default
+    prefix: "connect_"
+    base:
+      path: ${TEMP}
+      dir: "JDownloaderManager"
+main:
+  download:
+    poolSize: 16
+    maxPoolSize: 32
+    queueSize: 16
+    base:
+      path: ${USERPROFILE}
