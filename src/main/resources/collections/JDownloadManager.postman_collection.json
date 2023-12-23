@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "5aa5c1fd-c306-45dd-9e7e-2fcf0b6a2f21",
+		"name": "JDownloadManager",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31685757"
+	},
+	"item": [
+		{
+			"name": "GetDownloadDetails",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/download/details?downloadUrl=https://ash-speed.hetzner.com/1GB.bin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"download",
+						"details"
+					],
+					"query": [
+						{
+							"key": "downloadUrl",
+							"value": "https://ash-speed.hetzner.com/1GB.bin"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "progress",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": "http://localhost:8080/api/download/progress/19129e59-f043-43e9-b3a0-99eb6a1fe1f1"
+			},
+			"response": [
+				{
+					"name": "progress",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": "http://localhost:8080/api/download/progress/e8daa46e-32fe-4bc7-8459-40f3c0c9b19d"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/event-stream"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 15:02:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "event:progress\ndata:{\"size\":134217727,\"downloaded\":30736083,\"percentage\":22.90016653314357,\"speed\":1071.130266596968,\"elaspedTime\":28695000,\"remainingTime\":96609,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12959443,\"percentage\":9.655537528213392,\"speed\":453.01649945817456,\"elaspedTime\":28607000,\"remainingTime\":267668,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":4865747,\"percentage\":3.6252640457843546,\"speed\":170.94989987000667,\"elaspedTime\":28463000,\"remainingTime\":756666,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":17153747,\"percentage\":12.780537551496456,\"speed\":597.8165121628215,\"elaspedTime\":28694000,\"remainingTime\":195819,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21724883,\"percentage\":16.18629929562136,\"speed\":758.3385576654565,\"elaspedTime\":28648000,\"remainingTime\":148341,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":8093395,\"percentage\":6.0300492199514,\"speed\":281.9016022291884,\"elaspedTime\":28710000,\"remainingTime\":447405,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2031314,\"percentage\":1.5134468787420308,\"speed\":71.70440184969466,\"elaspedTime\":28329000,\"remainingTime\":1843490,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12123867,\"percentage\":9.032984890289491,\"speed\":422.03735162042676,\"elaspedTime\":28727000,\"remainingTime\":289296,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":30736083,\"percentage\":22.90016653314357,\"speed\":1071.130266596968,\"elaspedTime\":28695000,\"remainingTime\":96609,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12959443,\"percentage\":9.655537528213392,\"speed\":453.01649945817456,\"elaspedTime\":28607000,\"remainingTime\":267668,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21724883,\"percentage\":16.18629929562136,\"speed\":758.3385576654565,\"elaspedTime\":28648000,\"remainingTime\":148341,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":8093395,\"percentage\":6.0300492199514,\"speed\":281.9016022291884,\"elaspedTime\":28710000,\"remainingTime\":447405,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":17153747,\"percentage\":12.780537551496456,\"speed\":597.8165121628215,\"elaspedTime\":28694000,\"remainingTime\":195819,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":4865747,\"percentage\":3.6252640457843546,\"speed\":170.94989987000667,\"elaspedTime\":28463000,\"remainingTime\":756666,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2031314,\"percentage\":1.5134468787420308,\"speed\":71.70440184969466,\"elaspedTime\":28329000,\"remainingTime\":1843490,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12123867,\"percentage\":9.032984890289491,\"speed\":422.03735162042676,\"elaspedTime\":28727000,\"remainingTime\":289296,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":32195283,\"percentage\":23.98735526194688,\"speed\":1071.961210627955,\"elaspedTime\":30034000,\"remainingTime\":95173,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":14287571,\"percentage\":10.645070006289108,\"speed\":475.50740506539756,\"elaspedTime\":30047000,\"remainingTime\":252215,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":22659795,\"percentage\":16.88286302151429,\"speed\":747.4533249769098,\"elaspedTime\":30316000,\"remainingTime\":149250,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":8504019,\"percentage\":6.335987942933946,\"speed\":279.90319926272133,\"elaspedTime\":30382000,\"remainingTime\":449132,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":18301651,\"percentage\":13.635792684821729,\"speed\":601.1381507636721,\"elaspedTime\":30445000,\"remainingTime\":192827,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":5014227,\"percentage\":3.735890267311709,\"speed\":164.05126778995583,\"elaspedTime\":30565000,\"remainingTime\":787580,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2065106,\"percentage\":1.538623880882739,\"speed\":66.46195932028837,\"elaspedTime\":31072000,\"remainingTime\":1988394,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":14025435,\"percentage\":10.449763465298439,\"speed\":448.7995584141308,\"elaspedTime\":31251000,\"remainingTime\":267808,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":41304787,\"percentage\":30.774464687514786,\"speed\":1031.7426937103462,\"elaspedTime\":40034000,\"remainingTime\":90054,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21988051,\"percentage\":16.38237473653536,\"speed\":548.563006760971,\"elaspedTime\":40083000,\"remainingTime\":204588,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":5931731,\"percentage\":4.4194840224048795,\"speed\":146.0693688591199,\"elaspedTime\":40609000,\"remainingTime\":878253,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":28377811,\"percentage\":21.143116959505655,\"speed\":694.4622519149352,\"elaspedTime\":40863000,\"remainingTime\":152405,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":11190995,\"percentage\":8.337941082849659,\"speed\":273.49809374847257,\"elaspedTime\":40918000,\"remainingTime\":449826,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":25297619,\"percentage\":18.848195067407154,\"speed\":618.1911685645863,\"elaspedTime\":40922000,\"remainingTime\":176191,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2949842,\"percentage\":2.1978035732940104,\"speed\":71.51999030185478,\"elaspedTime\":41245000,\"remainingTime\":1835401,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21250779,\"percentage\":15.833064286657155,\"speed\":514.3723435155154,\"elaspedTime\":41314000,\"remainingTime\":219620,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":30327507,\"percentage\":22.59575368907864,\"speed\":605.5086650960349,\"elaspedTime\":50086000,\"remainingTime\":171575,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":51348179,\"percentage\":38.25737489951681,\"speed\":1024.320832252788,\"elaspedTime\":50129000,\"remainingTime\":80901,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":7193299,\"percentage\":5.359425435657989,\"speed\":141.99729559003512,\"elaspedTime\":50658000,\"remainingTime\":894555,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":35554003,\"percentage\":26.489796686841522,\"speed\":698.7677718598297,\"elaspedTime\":50881000,\"remainingTime\":141196,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":33964755,\"percentage\":25.305714646769424,\"speed\":666.890928725702,\"elaspedTime\":50930000,\"remainingTime\":150328,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":5309138,\"percentage\":3.955616086390734,\"speed\":102.5484431739164,\"elaspedTime\":51772000,\"remainingTime\":1257050,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":14828243,\"percentage\":11.047902040540441,\"speed\":285.0105329924847,\"elaspedTime\":52027000,\"remainingTime\":418894,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":28148443,\"percentage\":20.972224481196882,\"speed\":539.3145249362942,\"elaspedTime\":52193000,\"remainingTime\":196674,\"partId\":0,\"status\":\"STARTED\"}\n\n"
+				}
+			]
+		},
+		{
+			"name": "progress1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": "http://localhost:8080/api/download/progress/19129e59-f043-43e9-b3a0-99eb6a1fe1f1"
+			},
+			"response": [
+				{
+					"name": "progress",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "accept",
+								"value": "*/*"
+							}
+						],
+						"url": "http://localhost:8080/api/download/progress/e8daa46e-32fe-4bc7-8459-40f3c0c9b19d"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "text/event-stream"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 16 Dec 2023 15:02:37 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "event:progress\ndata:{\"size\":134217727,\"downloaded\":30736083,\"percentage\":22.90016653314357,\"speed\":1071.130266596968,\"elaspedTime\":28695000,\"remainingTime\":96609,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12959443,\"percentage\":9.655537528213392,\"speed\":453.01649945817456,\"elaspedTime\":28607000,\"remainingTime\":267668,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":4865747,\"percentage\":3.6252640457843546,\"speed\":170.94989987000667,\"elaspedTime\":28463000,\"remainingTime\":756666,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":17153747,\"percentage\":12.780537551496456,\"speed\":597.8165121628215,\"elaspedTime\":28694000,\"remainingTime\":195819,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21724883,\"percentage\":16.18629929562136,\"speed\":758.3385576654565,\"elaspedTime\":28648000,\"remainingTime\":148341,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":8093395,\"percentage\":6.0300492199514,\"speed\":281.9016022291884,\"elaspedTime\":28710000,\"remainingTime\":447405,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2031314,\"percentage\":1.5134468787420308,\"speed\":71.70440184969466,\"elaspedTime\":28329000,\"remainingTime\":1843490,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12123867,\"percentage\":9.032984890289491,\"speed\":422.03735162042676,\"elaspedTime\":28727000,\"remainingTime\":289296,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":30736083,\"percentage\":22.90016653314357,\"speed\":1071.130266596968,\"elaspedTime\":28695000,\"remainingTime\":96609,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12959443,\"percentage\":9.655537528213392,\"speed\":453.01649945817456,\"elaspedTime\":28607000,\"remainingTime\":267668,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21724883,\"percentage\":16.18629929562136,\"speed\":758.3385576654565,\"elaspedTime\":28648000,\"remainingTime\":148341,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":8093395,\"percentage\":6.0300492199514,\"speed\":281.9016022291884,\"elaspedTime\":28710000,\"remainingTime\":447405,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":17153747,\"percentage\":12.780537551496456,\"speed\":597.8165121628215,\"elaspedTime\":28694000,\"remainingTime\":195819,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":4865747,\"percentage\":3.6252640457843546,\"speed\":170.94989987000667,\"elaspedTime\":28463000,\"remainingTime\":756666,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2031314,\"percentage\":1.5134468787420308,\"speed\":71.70440184969466,\"elaspedTime\":28329000,\"remainingTime\":1843490,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":12123867,\"percentage\":9.032984890289491,\"speed\":422.03735162042676,\"elaspedTime\":28727000,\"remainingTime\":289296,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":32195283,\"percentage\":23.98735526194688,\"speed\":1071.961210627955,\"elaspedTime\":30034000,\"remainingTime\":95173,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":14287571,\"percentage\":10.645070006289108,\"speed\":475.50740506539756,\"elaspedTime\":30047000,\"remainingTime\":252215,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":22659795,\"percentage\":16.88286302151429,\"speed\":747.4533249769098,\"elaspedTime\":30316000,\"remainingTime\":149250,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":8504019,\"percentage\":6.335987942933946,\"speed\":279.90319926272133,\"elaspedTime\":30382000,\"remainingTime\":449132,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":18301651,\"percentage\":13.635792684821729,\"speed\":601.1381507636721,\"elaspedTime\":30445000,\"remainingTime\":192827,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":5014227,\"percentage\":3.735890267311709,\"speed\":164.05126778995583,\"elaspedTime\":30565000,\"remainingTime\":787580,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2065106,\"percentage\":1.538623880882739,\"speed\":66.46195932028837,\"elaspedTime\":31072000,\"remainingTime\":1988394,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":14025435,\"percentage\":10.449763465298439,\"speed\":448.7995584141308,\"elaspedTime\":31251000,\"remainingTime\":267808,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":41304787,\"percentage\":30.774464687514786,\"speed\":1031.7426937103462,\"elaspedTime\":40034000,\"remainingTime\":90054,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21988051,\"percentage\":16.38237473653536,\"speed\":548.563006760971,\"elaspedTime\":40083000,\"remainingTime\":204588,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":5931731,\"percentage\":4.4194840224048795,\"speed\":146.0693688591199,\"elaspedTime\":40609000,\"remainingTime\":878253,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":28377811,\"percentage\":21.143116959505655,\"speed\":694.4622519149352,\"elaspedTime\":40863000,\"remainingTime\":152405,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":11190995,\"percentage\":8.337941082849659,\"speed\":273.49809374847257,\"elaspedTime\":40918000,\"remainingTime\":449826,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":25297619,\"percentage\":18.848195067407154,\"speed\":618.1911685645863,\"elaspedTime\":40922000,\"remainingTime\":176191,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":2949842,\"percentage\":2.1978035732940104,\"speed\":71.51999030185478,\"elaspedTime\":41245000,\"remainingTime\":1835401,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":21250779,\"percentage\":15.833064286657155,\"speed\":514.3723435155154,\"elaspedTime\":41314000,\"remainingTime\":219620,\"partId\":0,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":30327507,\"percentage\":22.59575368907864,\"speed\":605.5086650960349,\"elaspedTime\":50086000,\"remainingTime\":171575,\"partId\":5,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":51348179,\"percentage\":38.25737489951681,\"speed\":1024.320832252788,\"elaspedTime\":50129000,\"remainingTime\":80901,\"partId\":4,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":7193299,\"percentage\":5.359425435657989,\"speed\":141.99729559003512,\"elaspedTime\":50658000,\"remainingTime\":894555,\"partId\":1,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":35554003,\"percentage\":26.489796686841522,\"speed\":698.7677718598297,\"elaspedTime\":50881000,\"remainingTime\":141196,\"partId\":2,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":33964755,\"percentage\":25.305714646769424,\"speed\":666.890928725702,\"elaspedTime\":50930000,\"remainingTime\":150328,\"partId\":6,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":5309138,\"percentage\":3.955616086390734,\"speed\":102.5484431739164,\"elaspedTime\":51772000,\"remainingTime\":1257050,\"partId\":7,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":14828243,\"percentage\":11.047902040540441,\"speed\":285.0105329924847,\"elaspedTime\":52027000,\"remainingTime\":418894,\"partId\":3,\"status\":\"STARTED\"}\n\nevent:progress\ndata:{\"size\":134217727,\"downloaded\":28148443,\"percentage\":20.972224481196882,\"speed\":539.3145249362942,\"elaspedTime\":52193000,\"remainingTime\":196674,\"partId\":0,\"status\":\"STARTED\"}\n\n"
+				}
+			]
+		},
+		{
+			"name": "StartDownloading",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/download/submit?taskId=cac4af16-81f4-48d4-9443-07532bbe82cc",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"download",
+						"submit"
+					],
+					"query": [
+						{
+							"key": "taskId",
+							"value": "cac4af16-81f4-48d4-9443-07532bbe82cc"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
